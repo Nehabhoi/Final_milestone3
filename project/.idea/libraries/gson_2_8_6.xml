@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="gson-2.8.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jar/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/json_simple.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/lucene-snowball-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/opennlp-tools-1.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

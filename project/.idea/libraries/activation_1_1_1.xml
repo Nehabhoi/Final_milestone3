@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="activation-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/activation-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/commons-lang3-3.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/core-utils-4.1.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jackson-annotations-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jackson-core-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jackson-databind-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jackson-datatype-jsr310-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jackson-module-parameter-names-2.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jfreechart-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/jsr250-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/slf4j-api-1.7.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-aop-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-beans-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-context-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-core-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-expression-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-jcl-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-mvc-4.1.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-web-5.2.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jar/chartJar/spring-webmvc-5.2.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
