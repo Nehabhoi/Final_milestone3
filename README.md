@@ -12,7 +12,7 @@ Milestone 3 - Console Application.
 4. Paper - Evaluation Of Search Engine.
 
 Recording for milestone 3 : https://csulb-my.sharepoint.com/:f:/g/personal/suchitrareddy_chinnamail_student_csulb_edu/EkRjVjFPxSBEv_Xqh3I7UwYB0paI4TUJ9d56rJLX4jGEFg?e=vnDFbf
-Vocabulary elimination w(q,t) threhold value analysis : W(q,t) threshold analysis.pdf
+<br/> Vocabulary elimination w(q,t) threhold value analysis : W(q,t) threshold analysis.pdf 
 
 Milestone 2 - Console Application
 1. Ranked retrivals
