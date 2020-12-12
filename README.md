@@ -1,6 +1,4 @@
-# Final_milestone3
-
-<h1> Simple Search Engine Application </h1>
+<h1>Final_milestone3: Simple Search Engine Application </h1>
 
 Java Console Project
 
