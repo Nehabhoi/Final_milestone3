@@ -27,7 +27,7 @@ Milestone 1 - GUI Application
 4. special query
 5. Web GUI (REST Application)
 
-milestone1 link: https://github.com/Nehabhoi/final_milestone1
+milestone1 link: https://github.com/Nehabhoi/final_milestone1 <br/>
 milestone2 link: https://github.com/Nehabhoi/Final_milestone2
 
 Authour: Juhi pathak, Neha Bhoi, Suchitra Reddy
