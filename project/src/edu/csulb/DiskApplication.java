@@ -139,12 +139,6 @@ public class DiskApplication {
 									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationALlQueries();
 									break;
 								case "2":
-									vocabularyEliminationEvaluationObj.setWQTThreshold(0.001f);
-									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
-									vocabularyEliminationEvaluationObj.setWQTThreshold(0.01f);
-									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
-									vocabularyEliminationEvaluationObj.setWQTThreshold(0.1f);
-									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
 									vocabularyEliminationEvaluationObj.setWQTThreshold(1.0f);
 									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
 									vocabularyEliminationEvaluationObj.setWQTThreshold(1.1f);
@@ -162,10 +156,6 @@ public class DiskApplication {
 									vocabularyEliminationEvaluationObj.setWQTThreshold(2.0f);
 									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
 									vocabularyEliminationEvaluationObj.setWQTThreshold(2.5f);
-									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
-									vocabularyEliminationEvaluationObj.setWQTThreshold(5.0f);
-									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
-									vocabularyEliminationEvaluationObj.setWQTThreshold(7.5f);
 									vocabularyEliminationEvaluationObj.executeVocabularyEliminationEvaluationFirstQuery();
 									break;
 								case "3":
@@ -239,7 +229,7 @@ public class DiskApplication {
 				int count = 0;
 				for (Posting p : q.getPostings(index)) {
 					System.out.println("Document " + corpus.getDocument(p.getDocumentId()).getTitle() + " id:"
-							+ p.getDocumentId());
+							+p.getDocumentId()+": "+corpus.getDocument(p.getDocumentId()).gettitteOfDocuement());
 					count++;
 				}
 				System.out.println("count from disk : " + count+"\n");
@@ -275,6 +265,7 @@ public class DiskApplication {
 		List<PostingAccumulator> rankedRetrievalPostings=new ArrayList<>();
 		RankedRetrieval rankedRetrieval = new RankedRetrieval(query, path.toString(),(double) corpus.getCorpusSize());
 		AdvanceTokenProcessor processor = new AdvanceTokenProcessor();
+		rankedRetrieval.setNumberOfDocuments(50);
 		try {
 			if(rankedRetrieval.checkForTerms( index,  processor)){
 				String newQuery = rankedRetrieval.getSpellCorrectedQuery(index,processor);
@@ -285,6 +276,7 @@ public class DiskApplication {
 				switch(queryOption){
 					case "1":
 						RankedRetrieval rankedRetrievalNew = new RankedRetrieval(newQuery, path.toString(), corpus.getCorpusSize());
+						rankedRetrievalNew.setNumberOfDocuments(50);
 						rankedRetrievalPostings = rankedRetrievalNew.getPostings(index, processor, retrievalStrategy);
 						printRankResults(rankedRetrievalPostings,newQuery);
 						break;
@@ -315,14 +307,13 @@ public class DiskApplication {
 			j++;
 			Posting posting = p.getPosting();
 
-			String s = corpus.getDocument(posting.getDocumentId()).getTitle() + " Accum value - " + p.getAccumulator();
+			String s = corpus.getDocument(posting.getDocumentId()).getTitle() +corpus.getDocument(posting.getDocumentId()).gettitteOfDocuement()+" Accum value - " + p.getAccumulator();
 			result += s +"\n";
-			System.out.println(j + ")" + corpus.getDocument(posting.getDocumentId()).getTitle() + " Accum value - " + p.getAccumulator());
+			System.out.println(j + ")" + corpus.getDocument(posting.getDocumentId()).getTitle()  +
+					": "+corpus.getDocument(posting.getDocumentId()).gettitteOfDocuement()+" Accum value - " + p.getAccumulator());
 		}
 		if (j == 0) {
 			System.out.println("No Match Found for query \"" + query + "\".\n");
-		} else {
-			System.out.println("Total number of Document query \"" + query + "\" occured is :: " + j +"\n");
 		}
 	}
 
